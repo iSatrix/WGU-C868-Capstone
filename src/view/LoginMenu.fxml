@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginMenuController">
+    <children>
+      <VBox alignment="CENTER" layoutX="-6.0" layoutY="-1.0" prefHeight="200.0" prefWidth="330.0">
+         <children>
+            <Label fx:id="logoLabel" text="APPOINTMENT SCHEDULER" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0">
+               <children>
+                  <Label fx:id="loginUserLocationLabel" text="User Location:">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="loginDetectedLocationLabel" layoutX="10.0" layoutY="10.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="212.0">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="loginUserNameLabel" alignment="CENTER" text="User Name:">
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="loginPasswordLabel" alignment="CENTER_RIGHT" prefWidth="100.0" text="Password:">
+                           <VBox.margin>
+                              <Insets right="5.0" />
+                           </VBox.margin></Label>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="129.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="loginUserNameTxt" />
+                        <PasswordField fx:id="loginPasswordTxt" />
+                        <Button fx:id="loginBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="30.0" prefWidth="100.0" text="LOGIN">
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="loginErrorLabel" text="Incorrect user ID or password" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+    </children>
+</AnchorPane>
