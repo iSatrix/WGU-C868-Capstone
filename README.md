@@ -6,4 +6,4 @@ The "doc1.pdf" is a document I put together explaining my customer and their bus
 The "doc2.pdf" is a document containing several things: design plan, uml diagrams, testing plan, user guide, and more
 The "src" folder contains my application's source code.
 
-For my capstone application I upgraded a previours project of mine called the Appointment Scheduler.  I added a search functionality to my customer and appointment tables.  These changes are explained in doc1 and doc2.
+For my capstone application I upgraded a previous project of mine called the Appointment Scheduler.  I added a search functionality to my customer and appointment tables.  These changes are explained in doc1 and doc2.
